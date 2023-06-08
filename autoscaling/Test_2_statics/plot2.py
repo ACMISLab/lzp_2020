@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
-import random
 
 import matplotlib
 import numpy as np
 import pandas as pd
 import seaborn as sns
 from matplotlib import pyplot as plt
-from figPlot import min_max_range
 
 PPO_thr_path = "./fig_data/PPO_throughput.csv"
 PPO_l90_path = "./fig_data/PPO_L_P90.csv"
@@ -36,9 +34,9 @@ QL_L_avg = list(pd.read_csv(QL_avg_path, header=None).iloc[:, 1])[limit:]
 PPO_L_P90 = [x * 1000 for x in PPO_L_P90]
 PPO_L_avg = [x * 1000 for x in PPO_L_avg]
 
-thr_list = [np.mean(PPO_throughput), np.mean(QL_throughput), np.mean(KPA_throughput)+10]
-avg_list = [np.mean(PPO_L_avg), np.mean(QL_L_avg), np.mean(KPA_L_avg)-150]
-p90_list = [242, np.mean(QL_L_P90), np.mean(KPA_L_p90)-250]
+thr_list = [np.mean(PPO_throughput), np.mean(QL_throughput), np.mean(KPA_throughput)]
+avg_list = [np.mean(PPO_L_avg), np.mean(QL_L_avg), np.mean(KPA_L_avg)]
+p90_list = [np.mean(PPO_L_P90), np.mean(QL_L_P90), np.mean(KPA_L_p90)]
 
 # print(PPO_list, QL_list)
 

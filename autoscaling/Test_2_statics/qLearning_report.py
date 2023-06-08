@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
-import random
 
 import matplotlib
 import numpy as np
 import pandas as pd
 import seaborn as sns
 from matplotlib import pyplot as plt
-from figPlot import min_max_range
 
 
 def smooth(old_data, weight):
