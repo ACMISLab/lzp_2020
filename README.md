@@ -1,0 +1,8 @@
+# lzp_2020
+仓库包含三部分工作：
+1. 基于Knative的Serverless云计算平台的工程开发
+前后端开发工作基于JeecgBoot框架，位于文件夹my-serverless-FaaS中。系统演示视频位于system_demostration_video文件夹中。
+2. 基于PPO的Serverless自动伸缩策略实验
+实验平台架构及对比算法Q-Learning基于Java编写，位于HHP_and_Autoscaler文件夹中。PPO算法基于Python实现，位于autoscaling文件夹中。
+3. 基于函数关联集的云函数冷启动优化策略实验
+Azure Function公开数据集处理及基于FP-Growth的关联集生成基于Python编写，位于coldStartStrategy文件夹中。自适应混合直方图策略基于Java实现，位于HHP_and_Autoscaler文件夹中。
